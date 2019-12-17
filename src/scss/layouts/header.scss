@@ -1,0 +1,12 @@
+.e-header {
+  display: block;
+  &__list {
+    @include flex;
+    &__item {
+      position: relative;
+      span {
+        font-size: 20px; 
+      } 
+    }
+  }
+}
