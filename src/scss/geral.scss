@@ -3,4 +3,8 @@
 @import 'variaveis/variaveis';
 
 @import 'layouts/header';
+@import 'layouts/footer';
 
+body {
+    font-family: $font-padrao;
+}

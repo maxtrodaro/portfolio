@@ -137,14 +137,26 @@ li {
   list-style: none; }
 
 .e-header {
-  display: block; }
+  display: block;
+  width: 100%;
+  background: #242424;
+  position: fixed;
+  padding: 30px 0; }
   .e-header__list {
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 50%;
+    float: right; }
     .e-header__list__item {
-      position: relative; }
+      position: relative;
+      margin-right: 20px; }
+      .e-header__list__item:last-child {
+        margin-right: 30px; }
       .e-header__list__item span {
-        font-size: 20px; }
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer; }
 
-/*# sourceMappingURL=geral.css.map */
+body {
+  font-family: "Open Sans", sans-serif; }
