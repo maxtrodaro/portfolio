@@ -1,0 +1,15 @@
+.e-footer {
+  background: $cor-preto;
+  padding: 20px 0;
+  &__content {
+    width: 100%;
+    text-align: center;
+    p {
+      margin: 10px 0;
+      color: #fff;
+      &:first-child {
+        color: $cor-padrao;
+      }
+    }
+  }
+}
