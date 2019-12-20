@@ -3,6 +3,8 @@
 @import 'variaveis/variaveis';
 
 @import 'layouts/header';
+@import 'layouts/about';
+@import 'layouts/projects';
 @import 'layouts/tecnology';
 @import 'layouts/footer';
 
@@ -12,5 +14,5 @@ body {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 84px;
 }
