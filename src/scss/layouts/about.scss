@@ -1,8 +1,11 @@
 .e-about {
   &__content {
-    padding: 2% 5%;
+    padding: 8% 5%;
     @include flex;
     background: $cor-preto;
+    @media #{$mobile}{
+      flex-wrap: wrap;
+    }
     &__left {
       width: 50%;
       @include flex;
@@ -11,6 +14,10 @@
       color: $cor-padrao;
       font-weight: 900;
       line-height: 36px;
+      @media #{$mobile}{
+        width: 100%;
+        margin-bottom: 50px;
+      }
       img {
         width: 200px;
         height: 200px;
@@ -20,15 +27,20 @@
       p {
         color: $cor-branco;
         font-weight: 500;
+        font-size: 18px;
       }
     }
     &__right {
       width: 50%;
       min-height: 300px;
+      @media #{$mobile}{
+        width: 100%;
+        margin-bottom: 50px;
+      }
       > span {
         @include flex;
         justify-content: center;
-        color: #1889ec;
+        color: $cor-padrao;
         text-transform: uppercase;
         font-weight: 900;
         margin-bottom: 30px;
@@ -36,9 +48,10 @@
       }
       p {
         color: $cor-branco;
-        line-height: 20px;
+        line-height: 27px;
         font-size: 18px;
         padding: 0 5%;
+        font-weight: 100;
         a {
           text-decoration: none;
           color: $cor-padrao;

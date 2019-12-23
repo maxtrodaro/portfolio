@@ -1,23 +1,81 @@
 .e-tecnology {
   &__content {
-    margin: 50px 5%;
+    margin: 5% 0;
+    width: 100%;
+    float: left;
+    position: relative;
+    @media #{$mobile}{
+      margin: 20% 0;
+    }
     > p {
       color: $cor-padrao;
       text-transform: uppercase;
       text-align: center;
       font-weight: 900;
-      margin: 60px 0;
+      margin-bottom: 5%;
       font-size: 24px;
+      @media #{$mobile}{
+        font-size: 20px;
+      }
     }
     &__list {
       @include flex;
-      &__item {
-        @include flex;
-        flex-direction: column;
-        width: 14%;
-        &:not(:last-child){
-            margin-right: 20px;
+      width: 100%;
+      float: left;
+      position: relative;
+      .slick-arrow {
+        font-size: 0;
+        cursor: pointer;
+        &.slick-prev {
+          &::after {
+            content: "";
+            position: absolute;
+            background: url("../../imagens/arrow.png") no-repeat;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+          }
         }
+        &.slick-next {
+          &::after {
+            content: "";
+            position: absolute;
+            background: url("../../imagens/arrow.png") no-repeat;
+            width: 36px;
+            height: 36px;
+            right: 10px;
+            transform: rotate(180deg);
+            text-align: center;
+          }
+        }
+      }
+      .slick-list {
+        width: 95%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        @media #{$mobile}{
+          width: 80%;
+        }
+        .slick-track {
+          position: relative;
+          display: flex;
+          top: 0;
+          left: 0;
+        }
+      }
+      &__item {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        display: flex;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+        margin-right: 20px;
         &__title {
             margin: 20px 0;
             color: $cor-preto;
@@ -28,7 +86,10 @@
             color: $cor-auxiliar;
             min-height: 120px;
             line-height: 20px;
-            font-size: 14px;
+            font-size: 16px;
+            @media #{$mobile}{
+              min-height: initial;
+            }
             strong{
               font-weight: 900;
             }
