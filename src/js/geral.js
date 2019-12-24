@@ -131,7 +131,7 @@ function scrollPage() {
         $('.e-header__right__list__item:nth-child(3)').click(function (e) {
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: 1500
+                scrollTop: 1300
             }, 'slow');
             $('.e-header__right').removeClass('is--active');
             $('.e-header__mobile').removeClass('is--active');
