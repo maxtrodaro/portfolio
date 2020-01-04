@@ -490,7 +490,8 @@ li {
         filter: invert(1); }
     .e-footer__content p {
       margin: 10px 0;
-      color: #fff; }
+      color: #fff;
+      line-height: 24px; }
       .e-footer__content p:first-child {
         color: #2088e4; }
     .e-footer__content__social {

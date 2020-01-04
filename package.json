@@ -34,6 +34,7 @@
   "homepage": "https://github.com/maxtrodaro/portfolio",
   "dependencies": {
     "concurrently": "^5.0.1",
+    "node-gyp": "^5.0.7",
     "node-sass": "^4.13.0"
   }
 }

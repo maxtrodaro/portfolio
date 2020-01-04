@@ -34,7 +34,7 @@
     @media #{$mobile}{
       width: 100%;
       position: absolute;
-      background: #303030;
+      background: $cor-preto;
       top: 70px;
       left: 0;
       transform: translateY(-150%);
@@ -101,7 +101,7 @@
     span {
       width: 25px;
       height: 2px;
-      background: #fff;
+      background: $cor-branco;
       position: relative;
       display: block;
       &:not(:last-child){
