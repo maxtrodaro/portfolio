@@ -30,22 +30,28 @@
           &::after {
             content: "";
             position: absolute;
-            background: url("../imagens/arrow.png") no-repeat;
-            width: 36px;
-            height: 36px;
+            width: 25px;
+            height: 25px;
+            left: 10px;
+            transform: rotate(-45deg);
             text-align: center;
+            margin-left: 5px;
+            border-left: 1px solid #696969;
+            border-top: 1px solid #696969;
           }
         }
         &.slick-next {
           &::after {
             content: "";
             position: absolute;
-            background: url("../imagens/arrow.png") no-repeat;
-            width: 36px;
-            height: 36px;
+            width: 25px;
+            height: 25px;
             right: 10px;
-            transform: rotate(180deg);
+            transform: rotate(45deg);
             text-align: center;
+            margin-right: 5px;
+            border-right: 1px solid #696969;
+            border-top: 1px solid #696969;
           }
         }
       }
