@@ -1,40 +1,39 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp",
-    "scss": "sass --watch src/scss/geral.scss:src/css/geral.css",
-    "start": "concurrently \"npm run gulp server\" \"npm run scss\" "
+    "clean": "rm -Rf ./dist",
+    "start": "npm run clean && gulp --colors && gulp watch --colors",
+    "build": "npm run clean && gulp --colors --production",
+    "vtex": "npm run build && gulp watch --colors --production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maxtrodaro/portfolio.git"
   },
-  "author": "Eduardo Godoy",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "http://godoydeveloper.com.br/",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-clean": "^0.3.1",
-    "gulp-csslint": "^0.2.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-jshint": "^1.11.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^1.4.1",
-    "gulp-usemin": "^0.3.14",
-    "jshint-stylish": "^2.0.1"
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "gulp": "^3.9.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "taskerify": "^1.5.4",
+    "underscore": "^1.9.0"
   },
-  "bugs": {
-    "url": "https://github.com/maxtrodaro/portfolio/issues"
-  },
-  "homepage": "https://github.com/maxtrodaro/portfolio",
   "dependencies": {
-    "concurrently": "^5.0.1",
-    "node-gyp": "^5.0.7",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.11.0",
+    "npm": "^6.0.1",
+    "rivets-utilify": "0.0.1",
+    "vtex-catalog": "^0.9.0",
+    "vtex-masterdata": "^0.3.0",
+    "vtex-minicart": "^0.5.0",
+    "vtex-recently-viewed": "^0.0.1",
+    "vtex-shelf-properties": "^0.3.0",
+    "vtex-utils": "1.9.0",
+    "vtex-wishlist": "^0.5.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
   }
 }
