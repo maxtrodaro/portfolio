@@ -1,18 +1,18 @@
-@import 'reset/reset';
-@import 'mixins/mixin';
-@import 'variaveis/variaveis';
+@import "reset/reset";
+@import "mixins/mixin";
+@import "variaveis/variaveis";
 
-@import 'layouts/header';
-@import 'layouts/about';
-@import 'layouts/projects';
-@import 'layouts/tecnology';
-@import 'layouts/footer';
+@import "layouts/header";
+@import "layouts/about";
+@import "layouts/projects";
+@import "layouts/tecnology";
+@import "layouts/footer";
 
 body {
-    font-family: $font-padrao;
-    overflow-x: hidden;
+	font-family: $font-padrao;
+	overflow-x: hidden;
 }
 
 main {
-    padding-top: 90px;
+	padding-top: 90px;
 }
